@@ -1,0 +1,21 @@
+arr=[]
+value=int(input("Enter number of values to add: "))
+
+for count in range(0,value,1):
+    value_append=int(input("Enter Value To Add: "))
+    arr.append(value_append)
+
+value_check=int(input("Enter Value To Match From Database: "))
+
+# Loop
+
+for count_2 in range(0,value,1):
+    if(value_check==arr[count_2]):
+        print("Your Value is Found At Index number:",count_2)
+        break
+    else:
+        if(count_2+1==value):
+            print("Your Value is not in this database")
+            break
+        else:
+            continue

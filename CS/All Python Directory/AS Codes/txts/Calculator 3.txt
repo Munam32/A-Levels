@@ -1,0 +1,6 @@
+table=int(input("Enter Table : "))
+choice=int(input("Enter End Value : "))
+a=1
+while(a<=choice):
+    print(table,"x",a,"=",table*a)
+    a=a+1
